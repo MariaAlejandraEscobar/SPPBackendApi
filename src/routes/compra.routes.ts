@@ -12,6 +12,15 @@ router.get('/', (req, res) => {
         });
 });
 
+router.get('/:id', (req, res) => {
+    compraController.listarCompras()
+        .then((data) => res.json(data))
+        .catch((error) => {
+            console.error(error);
+            res.status(500).send();
+        });
+});
+
 router.post('/add', (req, res) => {
     compraController.crearCompra(req.body)
         .then((result) => result ? res.status(201).send() : res.status(500).send())
