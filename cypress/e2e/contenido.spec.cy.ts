@@ -24,7 +24,7 @@ describe('CRUD de Producto API', () => {
       failOnStatusCode: false,
     }).then((response) => {
       expect(response.status).to.eq(200);
-      expect(response.body).to.be.an('array'); // Se espera un array de productos
+      expect(response.body).to.be.an('array');
     });
   });
 
