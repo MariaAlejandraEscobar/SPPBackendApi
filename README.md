@@ -9,7 +9,7 @@ Este proyecto incluye pruebas automatizadas con **Cypress** y **Playwright**, y 
 ## 📦 Tecnologías Utilizadas
 
 - 💻 Node.js / TypeScript
-- 🗃️ SQL (base de datos en `src/database`)
+- 🗃️ SQL (base de datos en `src/bd`)
 - 🔍 Cypress (pruebas E2E)
 - 🎭 Playwright (pruebas adicionales)
 - 🧭 Express (framework para el servidor API)
